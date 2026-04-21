@@ -1,0 +1,18 @@
+{
+  "applicant_name": "Priya Sharma",
+  "age": 28,
+  "monthly_income": 38000,
+  "employment_type": "salaried",
+  "upi_txn_per_month": 60,
+  "avg_txn_amount": 950,
+  "utility_bills_paid": 11,
+  "rent_payments_on_time": 10,
+  "mobile_recharge_regularity": 0.92,
+  "spending_variance": 0.18,
+  "income_stability_ratio": 0.87,
+  "savings_rate": 0.22,
+  "late_payments": 0,
+  "overdraft_count": 0,
+  "loan_amount_requested": 150000,
+  "loan_tenure_months": 36
+}

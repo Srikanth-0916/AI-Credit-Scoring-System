@@ -1,0 +1,31 @@
+version: "3.9"
+
+services:
+
+  backend:
+    build: ./backend
+    container_name: credit_scoring_api
+    ports:
+      - "5000:5000"
+    environment:
+      - DEBUG=False
+      - PORT=5000
+      - DB_PATH=/app/data/credit_scoring.db
+      - CORS_ORIGINS=http://localhost:3000
+    volumes:
+      - db_data:/app/data
+    restart: unless-stopped
+
+  frontend:
+    build: ./frontend
+    container_name: credit_scoring_ui
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=http://localhost:5000
+    depends_on:
+      - backend
+    restart: unless-stopped
+
+volumes:
+  db_data:
