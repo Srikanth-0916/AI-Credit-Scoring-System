@@ -1,0 +1,34 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+logs/
+
+# Env files
+.env
+.env.*
+
+# IDE
+.vscode/
+.idea/
+
+# Node modules (React)
+node_modules/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Build folders
+dist/
+build/
+
+# Coverage
+coverage/
+htmlcov/
+
+# Misc
+*.sqlite3
+*.db
